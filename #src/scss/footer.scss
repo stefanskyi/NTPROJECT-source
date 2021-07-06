@@ -1,0 +1,111 @@
+.footer {
+	background-color: #30333c;
+	&__content {
+	padding-top: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		@include adaptiv-value("padding-right", 58, 10, 1);
+		@include adaptiv-value("padding-left", 58, 10, 1);
+		@include adaptiv-value("padding-top", 15, 0, 1);
+		@include adaptiv-value("padding-bottom", 15, 0, 1);
+	}
+	&__menu {
+		@media (max-width: 610px) {
+			flex-direction: column;
+		}
+	}
+}
+
+.menu-footer {
+	display: flex;
+	&__column {
+		@media (max-width: $md3+px) {
+			width: 213px;
+			margin-right: 31px;
+		}
+		&:not(:last-child) {
+			@include adaptiv-value("margin-right", 149, 0, 1);
+		}
+	}
+	&__title {
+		margin-bottom: 15px;
+		display: flex;
+		flex-direction: row-reverse;
+		cursor: default;
+		align-items: baseline;
+		transition: margin-bottom 0.3s ease 0s;
+		@media (max-width: $md3+px) {
+			&._active {
+				margin-bottom: 0;
+			}
+		}
+		._init & {
+			display: flex;
+			width: 100%;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			align-items: center;
+			@extend ._icon-check;
+			&::before {
+				@extend %ic;
+				font-size: 12px;
+				transition: transform 0.3s ease 0s;
+			}
+		}
+		&._active {
+			&::before {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+	&__list {
+		margin-bottom: 15px;
+		@media (max-width: 540px) {
+			margin: 0px 0px 15px 15px;
+		}
+		li {
+			&:not(:last-child) {
+				margin: 0px 0px 15px 0px;
+			}
+		}
+		@media (max-width: $md3+px) {
+			padding: 15px 0 0 0;
+		}
+	}
+	&__link {
+		color: #fff;
+		@include adaptiv-value("font-size", 18, 16, 1);
+		margin-right: 10px;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		font-weight: 500;
+		line-height: 120%;
+	}
+}
+.social {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	margin-bottom: 18px;
+}
+.social__wrap {
+	display: flex;
+	@media (max-width: $md3+px) {
+		padding-bottom: 6px;
+	}
+	a {
+		&:not(:last-child) {
+			@include adaptiv-value("margin-right", 46, 30, 1);
+		}
+		align-items: center;
+	}
+}

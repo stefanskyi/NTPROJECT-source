@@ -1,0 +1,139 @@
+.pradžia {
+	display: flex;
+	@include adaptiv-value("height", 859, 575, 1);
+	background: linear-gradient(219deg, #e8f1ff 0%, #fafcff 100%);
+	position: relative;
+	&__content {
+		width: 100vw;
+		@include adaptiv-value("height", 786, 524, 1);
+		margin: 70px 0 0;
+		@media (max-width: $md2+px) {
+			margin-top: 50px;
+		}
+		.pradžia__title {
+			@include adaptiv-value("padding-top", 54, 25, 1);
+			@include adaptiv-value("padding-bottom", 80, 30, 1);
+			@include adaptiv-value("margin-left", 43, 20, 1);
+			@include adaptiv-value("width", 473, 290, 1);
+			@include adaptiv-value("font-size", 50, 30, 1);
+			@include adaptiv-value("line-height", 60, 30, 1);
+			color: #30333c;
+			font-family: Quicksand;
+			font-weight: 700;
+			z-index: 2;
+			position: relative;
+		}
+	}
+	&__square {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 65%;
+		height: 85%;
+		border-top-left-radius: 220px;
+		background: linear-gradient(192deg, #ffffff 0%, #ffffff 100%);
+		z-index: 1;
+	}
+	&__slider {
+		z-index: 2;
+		flex: 1 1 auto;
+		min-width: 0;
+	}
+}
+.main-slider {
+	position: relative;
+	z-index: 2;
+	width: 100vw;
+	@include adaptiv-value("padding-right", 0, 17, 1);
+	.blur {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		z-index: 1;
+		img {
+			height: 100%;
+		}
+		@media (max-width: $md2+px) {
+			display: none;
+		}
+	}
+}
+.slider-main {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	&__controls {
+		z-index: 2;
+	}
+	&__body {
+		overflow: visible;
+		@include adaptiv-value("width", 348, 290, 1);
+	}
+	&__slide {
+		position: relative;
+	}
+	&__image {
+		padding: 0px 0px 100% 0px;
+	}
+}
+.slider_main {
+	&__content {
+		@include adaptiv-value("padding-left", 24, 15, 1);
+		min-width: 295px;
+		max-height: 245px;
+		overflow: auto;
+		display: flex;
+		flex-direction: column;
+		@include adaptiv-value("padding", 24, 15, 1);
+		box-shadow: 0 10px 50px rgba(68, 71, 124, 0.15);
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		background: #fff;
+	}
+	&__title {
+		width: 272px;
+		@include adaptiv-value("font-size", 26, 22, 1);
+		font-weight: 600;
+		line-height: 32px;
+		margin: 0px 0px 4px/26px * 1em 0px;
+		color: #30333c;
+	}
+	&__text {
+		overflow: auto;
+		line-height: 32px;
+		color: #70737c;
+		@include adaptiv-value("width", 296, 265, 1);
+		&:not(:last-child) {
+			margin: 0px 0px 7px/18px * 1em 0px;
+		}
+	}
+	&__arrow {
+		&::before {
+			display: flex;
+			justify-content: flex-end;
+			margin: 0px 30px 0px 10px;
+			font-size: 20px;
+			color: #30333c;
+		}
+	}
+}
+
+.controls-slider-main {
+	position: relative;
+	width: 100vw;
+	@media (max-width: $md2+px) {
+		display: none;
+	}
+	.slider-arrows {
+		position: absolute;
+		top: 270px;
+		display: flex;
+		width: 100vw;
+		justify-content: space-between;
+		@include adaptiv-value("padding-left", 30, 15, 1);
+		@include adaptiv-value("padding-right", 30, 15, 1);
+	}
+}
