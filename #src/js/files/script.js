@@ -86,7 +86,17 @@ window.onload = function () {
 			naujienosItems.insertAdjacentHTML('beforeend', naujienosTemplate);
 		});
 	}
+
+
+	const kontaktaiFormButton = document.querySelector('.kontaktai__form__button');
+	const formItemValue = document.querySelectorAll('.kontaktai__form__item');
+
+	const addClass = function () {
+		kontaktaiFormButton.classList.add(('btn_white'));
+	}();
 }
+
+
 
 
 

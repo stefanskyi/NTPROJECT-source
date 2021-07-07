@@ -1,0 +1,40 @@
+{
+	"naujienos": [
+		{
+			"id": 7,
+			"url": "#",
+			"title": "Lorem ipsum dolor sit amet",
+			"image": "6.jpg"
+		},
+		{
+			"id": 8,
+			"url": "#",
+			"title": "Lorem ipsum dolor sit amet",
+			"image": "2.jpg"
+		},
+		{
+			"id": 9,
+			"url": "#",
+			"title": "Lorem ipsum dolor sit amet",
+			"image": "5.jpg"
+		},
+		{
+			"id": 10,
+			"url": "#",
+			"title": "Lorem ipsum dolor sit amet",
+			"image": "4.jpg"
+		},
+		{
+			"id": 11,
+			"url": "#",
+			"title": "Lorem ipsum dolor sit amet",
+			"image": "3.jpg"
+		},
+		{
+			"id": 12,
+			"url": "#",
+			"title": "Lorem ipsum dolor sit amet",
+			"image": "1.jpg"
+		}
+	]
+}
