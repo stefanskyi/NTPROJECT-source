@@ -1727,6 +1727,7 @@ body.ie ._ibg img {
 }
 
 .kontakt__peson-info {
+  min-width: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2252,11 +2253,11 @@ body.ie ._ibg img {
   }
 
   .kontakt__peson-image {
-    width: calc(100px + 30 * ((100vw - 320px) / 950));
+    width: calc(75px + 55 * ((100vw - 320px) / 950));
   }
 
   .kontakt__peson-image {
-    height: calc(100px + 30 * ((100vw - 320px) / 950));
+    height: calc(75px + 55 * ((100vw - 320px) / 950));
   }
 
   .kontakt__peson-image {
@@ -2483,6 +2484,10 @@ body.ie ._ibg img {
 
   .kontaktai__persons {
     margin-right: 40px;
+  }
+
+  .kontakt__peson-info {
+    min-width: 200px;
   }
 
   .menu-footer__column {

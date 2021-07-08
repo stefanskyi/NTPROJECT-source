@@ -67,17 +67,21 @@
 		}
 	}
 	&__peson-image {
-		@include adaptiv-value("width", 130, 100, 1);
-		@include adaptiv-value("height", 130, 100, 1);
+		@include adaptiv-value("width", 130, 75, 1);
+		@include adaptiv-value("height", 130, 75, 1);
 		@include adaptiv-value("margin-right", 30, 15, 1);
 		img {
 			border-radius: 50%;
 		}
 	}
 	&__peson-info {
+		min-width: 230px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		@media (max-width: $md3+px) {
+			min-width: 200px;
+		}
 		a {
 			&:not(:last-child) {
 				margin-bottom: 3px;
